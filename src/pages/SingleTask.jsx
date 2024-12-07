@@ -15,10 +15,8 @@ postRequest(`/task/update/${id}`,formData).then(()=>{
 setData(formData)
   alert("Task has been successfully updated.");
 })
-setIsEditing(false);
-   
-   
-  };
+setIsEditing(false);  
+};
 
   const handleDelete = () => {
     if (window.confirm("Are you sure you want to delete this task?")) {
